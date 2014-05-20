@@ -2,6 +2,10 @@
 
 dat stack tho
 
+## Requirements
+
+* NodeJS
+
 ## Awesome
 
 Install dependencies:
