@@ -13,7 +13,7 @@ $ npm install
 Build the client application:
 
 ```
-$ npm build
+$ npm run build
 ```
 
 Run tests (if there are any):
@@ -25,7 +25,7 @@ $ npm test
 Run database migrations (if there are any):
 
 ```
-$ npm migrate
+$ npm run migrate
 ```
 
 Start the server app:
