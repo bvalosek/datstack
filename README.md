@@ -1,6 +1,6 @@
 # datstack
 
-dat stack tho
+> dat stack tho
 
 ## Requirements
 
@@ -54,6 +54,9 @@ credentials comes from one place.
 ## PaaS
 
 ### OpenShift
+
+OpenShift is supported, simply push the repo into the OpenShift remote. Check
+out `.openshift/action_hooks` to see what's happening.
 
 ### Heroku
 
