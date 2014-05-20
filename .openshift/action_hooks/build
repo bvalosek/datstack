@@ -1,0 +1,11 @@
+#!/bin/bash
+
+source "$OPENSHIFT_REPO_DIR/.openshift/custom-nodejs-version/build"
+
+# For datstack, copy configs, run unit tests and grunt
+(
+   cd ${OPENSHIFT_REPO_DIR};
+   cp .openshift/files/database.json .;
+   npm run test;
+   npm run build;
+)
