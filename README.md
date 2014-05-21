@@ -12,6 +12,7 @@ Hyper portable and lean Javascript web application boilerplate.
 
 * Automated unit testing
 * Code-based database migrations for MySQL, PostgreSQL, and sqlite3
+* Frontend app built with Browserify, Grunt, and Bower
 * Share code between the server and client
 * Works out of the box for PaaS providers
 
@@ -47,6 +48,16 @@ Start the server app:
 ```
 $ npm start
 ```
+
+## Project Structure
+
+* `app/client/main.js` Client application
+* `app/server/main.js` Server application
+* `database.json` Database credentials
+* `dist/client/` Output directory for client app compile
+* `public/` Web root
+* `style/style.less` Style sheet base
+* `test/*.js` Unit tests
 
 ## Database
 
