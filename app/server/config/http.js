@@ -10,7 +10,7 @@ module.exports = {
     8123,
   ipAddress :
     process.env.OPENSHIFT_NODEJS_IP ||
-    '127.0.0.1',
+    undefined,
 
   // Static file serving directory
   webroot :

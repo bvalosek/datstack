@@ -16,6 +16,7 @@ var ip   = httpConfig.ipAddress;
 var port = httpConfig.port;
 app.listen(port, ip, function(err) {
   if (err) return console.error(err);
+  ip = ip || '[default]';
   console.log('Listening on ' + ip + ':' + port);
 });
 
