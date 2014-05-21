@@ -11,9 +11,6 @@ module.exports = function(grunt) {
     client: {
       client: {
         src: './app/client',
-      },
-      options: {
-        baseStyle : './style/style.less'
       }
     }
 
