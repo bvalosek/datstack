@@ -23,8 +23,8 @@ function addClientTask(grunt)
     }
 
     var options = this.options({
-      baseStyle : './style/base.less',
-      debug     : target !== 'release',
+      baseStyle : './style/style.less',
+      debug     : false,
       entry     : 'main.js',
       output    : './dist',
       webroot   : './public'
@@ -58,7 +58,10 @@ function addClientTask(grunt)
 
       runTaskWith('less', {
         dest: path.join(destDir, 'style.css'),
-        src: options.baseStyle
+        src: options.baseStyle,
+        options: {
+          paths: [path.join(webrootDir, 'bower_components')]
+        }
       });
 
     });

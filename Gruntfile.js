@@ -9,20 +9,17 @@ module.exports = function(grunt) {
   grunt.initConfig({
 
     client: {
-      release: {
-        src: './app/client'
-      },
-      debug: {
-        src: './app/client'
+      client: {
+        src: './app/client',
       },
       options: {
-        entry: 'main.js',
-        output: './dist',
-        webroot: './public'
+        baseStyle : './style/style.less'
       }
     }
 
   });
 
-  grunt.registerTask('default', ['client']);
+  grunt.registerTask('default', [
+    'client'
+  ]);
 };
