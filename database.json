@@ -1,9 +1,0 @@
-{
-  "local": {
-    "driver"   : "pg",
-    "user"     : "local",
-    "password" : "local",
-    "host"     : "local",
-    "database" : "njstest"
-  }
-}
