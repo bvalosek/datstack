@@ -74,11 +74,26 @@ credentials comes from one place.
 
 ## PaaS
 
+### Heroku
+
+Heroku is supported, just push to a Heroku app remote. Client app compilation
+and database migrations will automatically be run.
+
+#### Example
+
+Using the `heroku-toolbelt` from the command line:
+
+```
+$ git clone git@github.com:bvalosek/datstack.git
+$ cd datstack
+$ heroku create
+$ git push heroku master
+$ heroku open
+```
+
 ### OpenShift
 
 OpenShift is supported, simply push the repo into the OpenShift remote. Check
 out `.openshift/action_hooks` to see what's happening.
-
-### Heroku
 
 
