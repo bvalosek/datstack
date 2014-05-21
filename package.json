@@ -1,6 +1,7 @@
 {
-  "name": "njstest",
-  "version": "0.0.0",
+  "name": "datstack",
+  "version": "0.1.0",
+  "description": "Hyper portable and lean Javascript web application boilerplate.",
   "main": "./app/server/main.js",
   "scripts": {
     "start": "node ./app/server/main.js",

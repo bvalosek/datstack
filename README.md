@@ -1,10 +1,19 @@
 # datstack
 
+Hyper portable and lean Javascript web application boilerplate.
+
 > dat stack tho
 
 ## Requirements
 
 * NodeJS
+
+## Features
+
+* Automated unit testing
+* Code-based database migrations for MySQL, PostgreSQL, and sqlite3
+* Share code between the server and client
+* Works out of the box for PaaS providers
 
 ## Awesome
 
