@@ -1,5 +1,8 @@
-var express    = require('express');
-var httpConfig = require('./config/http.js');
+var express = require('express');
+var path    = require('path');
+
+var PORT     = process.env.PORT || 8123;
+var WEB_ROOT = path.resolve(path.join(__dirname, '../../dist/client'));
 
 var app = express();
 
@@ -9,14 +12,13 @@ app.get('/hello', function(req, res) {
 });
 
 // Serve static content
-app.use(express.static(httpConfig.webroot));
+app.use(express.static(WEB_ROOT));
 
 // Start server
-var ip   = httpConfig.ipAddress;
-var port = httpConfig.port;
-app.listen(port, ip, function(err) {
-  if (err) return console.error(err);
-  ip = ip || '[default]';
-  console.log('Listening on ' + ip + ':' + port);
+app.listen(PORT, function(err) {
+  if (err)
+    return console.error(err);
+  console.log('HTTP server listening on ' + PORT);
+  console.log('Web root being served from ' + WEB_ROOT);
 });
 
