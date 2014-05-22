@@ -4,11 +4,11 @@ module.exports = function(grunt) {
   require('load-grunt-tasks')(grunt);
 
   // Our plugins
-  require('./tasks/client.js')(grunt);
+  require('./tasks/datstack.js')(grunt);
 
   grunt.initConfig({
 
-    client: {
+    datstack: {
       client: {
         src: './app/client',
       }
@@ -17,6 +17,6 @@ module.exports = function(grunt) {
   });
 
   grunt.registerTask('default', [
-    'client'
+    'datstack'
   ]);
 };

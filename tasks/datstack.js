@@ -3,7 +3,7 @@ module.exports = addClientTask;
 var path  = require('path');
 var grunt = require('grunt');
 
-var TASK_NAME = 'client';
+var TASK_NAME = 'datstack';
 
 /**
  * A Grunt task to build the entirety of the client-side application.
