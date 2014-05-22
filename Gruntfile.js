@@ -7,13 +7,9 @@ module.exports = function(grunt) {
   require('./tasks/datstack.js')(grunt);
 
   grunt.initConfig({
-
     datstack: {
-      client: {
-        src: './app/client',
-      }
+      client: { src: './app/client' }
     }
-
   });
 
   grunt.registerTask('default', [
