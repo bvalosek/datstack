@@ -14,7 +14,7 @@ Hyper portable and lean Javascript web application boilerplate.
 * Code-based database migrations for MySQL, PostgreSQL, and sqlite3
 * Frontend app built with Browserify, Grunt, and Bower
 * Share code between the server and client
-* Works out of the box for PaaS providers
+* Works out of the box for PaaS providers (Heroku, OpenShift)
 
 ## Awesome
 
