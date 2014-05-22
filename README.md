@@ -14,7 +14,7 @@ Hyper portable and lean Javascript web application boilerplate.
 * Code-based database migrations for MySQL, PostgreSQL, and sqlite3
 * Frontend app built with Browserify, Grunt, and Bower
 * Share code between the server and client
-* Works out of the box for PaaS providers (Heroku, OpenShift)
+* Works out of the box for Heroku
 
 ## Awesome
 
@@ -72,14 +72,12 @@ credentials are correct (see the db-migrate docs for format details).
 It's probably a good idea to source this file in the server code so database
 credentials comes from one place.
 
-## PaaS
+## Heroku
 
-### Heroku
+When pushing to a Heroku remote, the client application will automatically be
+built and all database migrations will be run.
 
-Heroku is supported, just push to a Heroku app remote. Client app compilation
-and database migrations will automatically be run.
-
-#### Example
+### Example
 
 Using the `heroku-toolbelt` from the command line:
 
@@ -91,9 +89,5 @@ $ git push heroku master
 $ heroku open
 ```
 
-### OpenShift
-
-OpenShift is supported, simply push the repo into the OpenShift remote. Check
-out `.openshift/action_hooks` to see what's happening.
 
 
