@@ -1,7 +1,0 @@
-#!/bin/bash
-
-# For datstack, run migrations after app is deployed
-(
-   cd ${OPENSHIFT_REPO_DIR};
-   npm run migrate;
-)

@@ -1,3 +1,0 @@
-#!/bin/bash
-
-source "$OPENSHIFT_REPO_DIR/.openshift/custom-nodejs-version/deploy"
