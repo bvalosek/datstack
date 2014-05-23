@@ -4,7 +4,7 @@
   "description": "Hyper portable and lean Javascript web application boilerplate.",
   "main": "./app/server/main.js",
   "scripts": {
-    "build": "bower install && grunt",
+    "build": "grunt",
     "migrate": "if [ -f database.json ]; then db-migrate -e local up; fi",
     "postinstall": "npm run build && npm run migrate",
     "start": "node ./app/server/main.js",
@@ -12,8 +12,6 @@
   },
   "dependencies": {
     "express": "^4.2.0",
-    "jquery": "^2.1.1",
-    "bower": "^1.3.3",
     "browserify": "^4.1.5",
     "db-migrate": "^0.6.4",
     "grunt": "~0.4.5",

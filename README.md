@@ -12,7 +12,7 @@ Hyper portable and lean Javascript web application boilerplate.
 
 * Automated unit testing
 * Code-based database migrations for MySQL, PostgreSQL, and sqlite3
-* Frontend app built with Browserify, Grunt, and Bower
+* Frontend app built with Browserify, Grunt
 * Share code between the server and client
 * Works out of the box for Heroku
 
