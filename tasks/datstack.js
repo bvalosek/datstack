@@ -58,10 +58,7 @@ function addClientTask(grunt)
 
       runTaskWith('less', {
         dest: path.join(destDir, 'style.css'),
-        src: options.baseStyle,
-        options: {
-          paths: [path.join(webrootDir, 'bower_components')]
-        }
+        src: options.baseStyle
       });
 
     });
