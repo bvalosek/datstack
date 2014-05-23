@@ -79,10 +79,10 @@ built and all database migrations will be run.
 
 ### Example
 
-Using the `heroku-toolbelt` from the command line:
+Using the [heroku-toolbelt](https://toolbelt.heroku.com) from  the command line:
 
 ```
-$ git clone git@github.com:bvalosek/datstack.git
+$ git clone https://github.com/bvalosek/datstack.git 
 $ cd datstack
 $ heroku create
 $ git push heroku master
